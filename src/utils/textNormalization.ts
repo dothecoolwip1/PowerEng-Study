@@ -35,8 +35,8 @@ const glyphReplacements: Record<string, string> = {
 const wordCorrections: Record<string, string> = {
   te: 'the', tis: 'this', tese: 'these', tey: 'they', tere: 'there', terefore: 'therefore',
   tat: 'that', teir: 'their', tose: 'those', tus: 'thus', tomas: 'thomas', tird: 'third',
-  tickness: 'thickness', ticker: 'thicker', treaded: 'threaded', trottle: 'throttle',
-  trottling: 'throttling', toroughly: 'thoroughly', 'tree-element': 'three-element',
+  tursday: 'thursday', tickness: 'thickness', ticker: 'thicker', treaded: 'threaded',
+  trottle: 'throttle', trottling: 'throttling', toroughly: 'thoroughly', 'tree-element': 'three-element',
   afer: 'after', aferward: 'afterward', aferwards: 'afterwards', ofen: 'often',
   draf: 'draft', drafs: 'drafts', drafed: 'drafted', redrafed: 'redrafted', aircraf: 'aircraft',
   shif: 'shift', shifs: 'shifts', shifed: 'shifted', shifwork: 'shiftwork', 'non-shif': 'non-shift',
@@ -62,7 +62,12 @@ function preserveCase(original: string, replacement: string): string {
 
 export function normalizeTextbookText(input: string): string {
   let text = input.replace(/[ƟƩƫĮĸŇŌīﬀﬁﬂﬃﬄ¿ÏÁÀႇႈႉ�]/g, (ch) => glyphReplacements[ch] ?? ch);
+
+  // These capitalized words were confirmed as dropped-letter artifacts in the textbook text layer.
   text = text.replace(/\bTe\b/g, 'The');
+  text = text.replace(/\bTen\b/g, 'Then');
+  text = text.replace(/\bTree\b/g, 'Three');
+
   for (const [bad, good] of Object.entries(wordCorrections)) {
     if (bad === 'te') continue;
     const escaped = bad.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
