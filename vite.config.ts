@@ -24,7 +24,19 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,png,svg,json,woff2}'],
-        navigateFallback: '/PowerEng-Study/index.html'
+        navigateFallback: '/PowerEng-Study/index.html',
+        runtimeCaching: [
+          {
+            urlPattern: /\/textbook\/Power-Engineering-Fourth-Class-Part-A-Edition-3\.5\.pdf$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'reference-textbook-v1',
+              cacheableResponse: { statuses: [0, 200] },
+              expiration: { maxEntries: 1, maxAgeSeconds: 31536000 },
+              rangeRequests: true
+            }
+          }
+        ]
       }
     })
   ]
