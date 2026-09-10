@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArrowRight, BookOpen, Brain, Calculator, Search, Sigma, Sparkles, Bookmark } from 'lucide-react';
+import { ArrowRight, BookOpen, Brain, Calculator, FileSearch, GraduationCap, Search, Sigma, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { db } from '../db/db';
 import { getManifest } from '../services/content';
@@ -7,26 +7,43 @@ import type { StudyManifest } from '../types/models';
 import { useStudyStore } from '../store/useStudyStore';
 
 export function HomePage(){
-  const [manifest,setManifest]=useState<StudyManifest>(); const [stats,setStats]=useState({attempts:0,accuracy:0,bookmarks:0,mistakes:0});
+  const [manifest,setManifest]=useState<StudyManifest>();
+  const [stats,setStats]=useState({attempts:0,accuracy:0,mistakes:0});
   const last=useStudyStore(s=>s.lastChapterId);
-  useEffect(()=>{getManifest().then(setManifest); Promise.all([db.attempts.toArray(),db.bookmarks.count(),db.mistakes.where('resolved').equals(0).count()]).then(([a,b,m])=>setStats({attempts:a.length,accuracy:a.length?Math.round(a.filter(x=>x.correct).length/a.length*100):0,bookmarks:b,mistakes:m}));},[]);
+  useEffect(()=>{
+    getManifest().then(setManifest);
+    Promise.all([db.attempts.toArray(),db.mistakes.where('resolved').equals(0).count()]).then(([attempts,mistakes])=>setStats({attempts:attempts.length,accuracy:attempts.length?Math.round(attempts.filter(x=>x.correct).length/attempts.length*100):0,mistakes}));
+  },[]);
   const first=manifest?.units[0]?.chapters[0];
-  const continueChapter=manifest?.units.flatMap(u=>u.chapters.map(c=>({u,c}))).find(x=>x.c.id===last) ?? (first?{u:manifest!.units[0]!,c:first}:undefined);
-  return <div className="stack-lg">
-    <section className="hero-card"><div><p className="eyebrow">Your study dashboard</p><h1>Make the textbook work for you.</h1><p>Learn, practice, review mistakes, and jump straight back to the source.</p></div>{continueChapter&&<Link className="primary-button" to={`/learn/${continueChapter.u.id}/${continueChapter.c.id}`}>Continue studying <ArrowRight size={18}/></Link>}</section>
-    <section className="stat-grid">
-      <div className="stat"><strong>{stats.attempts}</strong><span>Questions answered</span></div><div className="stat"><strong>{stats.accuracy}%</strong><span>Quiz accuracy</span></div><div className="stat"><strong>{stats.mistakes}</strong><span>Weak items</span></div><div className="stat"><strong>{stats.bookmarks}</strong><span>Saved items</span></div>
+  const continueChapter=manifest?.units.flatMap(unit=>unit.chapters.map(chapter=>({unit,chapter}))).find(item=>item.chapter.id===last) ?? (first&&manifest?{unit:manifest.units[0]!,chapter:first}:undefined);
+  const chapterCount=manifest?.units.reduce((sum,unit)=>sum+unit.chapters.length,0)??0;
+
+  return <div className="stack-lg school-home">
+    <section className="course-heading"><p className="eyebrow">Your course</p><h1>Fourth Class Power Engineering</h1><p>Part A • {manifest?.units.length??12} units • {chapterCount||56} chapters</p></section>
+
+    {continueChapter&&<section className="continue-card">
+      <div className="continue-card-top"><div><span className="course-chip">Unit A-{continueChapter.unit.number} • Chapter {continueChapter.chapter.number}</span><h2>{continueChapter.chapter.title}</h2><p>{continueChapter.chapter.learningOutcome}</p></div><BookOpen size={28}/></div>
+      <Link className="primary-button full-button" to={`/learn/${continueChapter.unit.id}/${continueChapter.chapter.id}`}>Continue studying <ArrowRight size={18}/></Link>
+    </section>}
+
+    <section className="home-status"><div><strong>{stats.accuracy}%</strong><span>Practice accuracy</span></div><div><strong>{stats.mistakes}</strong><span>Topics to review</span></div><div><strong>{stats.attempts}</strong><span>Answers submitted</span></div></section>
+
+    <section><div className="section-head"><div><p className="eyebrow">Start here</p><h2>What are you trying to do?</h2></div></div>
+      <div className="home-primary-grid">
+        <Link className="home-task-card learn" to="/learn"><BookOpen/><div><strong>Learn the course</strong><span>Work through the textbook in order.</span></div><ArrowRight/></Link>
+        <Link className="home-task-card practice" to="/practice"><GraduationCap/><div><strong>Practice & exams</strong><span>Answer questions, calculations, and self tests.</span></div><ArrowRight/></Link>
+        <Link className="home-task-card formulas" to="/reference/formulas"><Sigma/><div><strong>Find a formula</strong><span>Use the formula handbook and exam sheet.</span></div><ArrowRight/></Link>
+        <Link className="home-task-card search" to="/reference/search"><Search/><div><strong>Find something</strong><span>Search the textbook by topic or word.</span></div><ArrowRight/></Link>
+      </div>
     </section>
-    <section><div className="section-head"><div><p className="eyebrow">Quick study</p><h2>What do you want to work on?</h2></div></div>
-      <div className="action-grid">
-        <Link className="action-card" to="/learn"><BookOpen/><div><strong>Learn</strong><span>56 chapters across 12 units</span></div></Link>
-        <Link className="action-card" to="/reference/formulas"><Sigma/><div><strong>Formula review</strong><span>Verified formulas plus extracted candidates</span></div></Link>
-        <Link className="action-card" to="/practice/calculations"><Calculator/><div><strong>Calculations</strong><span>Progressive hints and generated practice</span></div></Link>
-        <Link className="action-card" to="/practice/flashcards"><Brain/><div><strong>Flashcards</strong><span>Spaced review of key concepts</span></div></Link>
-        <Link className="action-card" to="/reference/search"><Search/><div><strong>Search</strong><span>Search the local textbook database</span></div></Link>
-        <Link className="action-card" to="/ask"><Sparkles/><div><strong>Ask the textbook</strong><span>Retrieve the most relevant source sections</span></div></Link>
-      <Link className="action-card" to="/saved"><Bookmark/><div><strong>Bookmarks & notes</strong><span>Return to saved lessons and personal notes.</span></div></Link></div>
+
+    <section><div className="section-head"><div><p className="eyebrow">Study tools</p><h2>More ways to study</h2></div></div>
+      <div className="compact-tool-grid">
+        <Link to="/practice/calculations"><Calculator/><span>Calculations</span></Link>
+        <Link to="/practice/flashcards"><Brain/><span>Flashcards</span></Link>
+        <Link to="/ask"><Sparkles/><span>Ask textbook</span></Link>
+        <Link to="/reference/textbook"><FileSearch/><span>Original PDF</span></Link>
+      </div>
     </section>
-    <section className="callout"><strong>Built around the uploaded Fourth Class Part A textbook.</strong><span>Every study item keeps a source page so you can verify it against the original.</span></section>
   </div>;
 }
