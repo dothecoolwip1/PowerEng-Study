@@ -4,6 +4,7 @@ import { HomePage } from '../pages/HomePage';
 import { LearnPage } from '../pages/LearnPage';
 import { LessonPage } from '../pages/LessonPage';
 import { PracticePage } from '../pages/PracticePage';
+import { ReferencePage } from '../pages/ReferencePage';
 import { FormulaPage } from '../pages/FormulaPage';
 import { SearchPage } from '../pages/SearchPage';
 import { ProgressPage } from '../pages/ProgressPage';
@@ -28,6 +29,7 @@ export function App(){
     <Route path="/practice/calculations" element={<CalculationsPage/>}/>
     <Route path="/practice/flashcards" element={<FlashcardsPage/>}/>
     <Route path="/practice/mistakes" element={<MistakesPage/>}/>
+    <Route path="/reference" element={<ReferencePage/>}/>
     <Route path="/reference/formulas" element={<FormulaPage/>}/>
     <Route path="/reference/search" element={<SearchPage/>}/>
     <Route path="/reference/textbook" element={<TextbookPage/>}/>
