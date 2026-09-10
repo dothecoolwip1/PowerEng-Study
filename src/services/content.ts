@@ -8,6 +8,20 @@ const unitCache = new Map<number, UnitPayload>();
 
 const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
 const TEXT_NORMALIZATION_VERSION = '2026-09-10-v1';
+const REFERENCE_TEXTBOOK_MODE_VERSION = 'bundled-reference-v1';
+
+async function clearLegacyUploadedTextbooks(): Promise<void> {
+  const marker = await db.settings.get('referenceTextbookModeVersion');
+  if (marker?.value === REFERENCE_TEXTBOOK_MODE_VERSION) return;
+  await db.transaction('rw', db.pdfFiles, db.settings, async () => {
+    await db.pdfFiles.clear();
+    await db.settings.put({
+      key:'referenceTextbookModeVersion',
+      value:REFERENCE_TEXTBOOK_MODE_VERSION,
+      updatedAt:new Date().toISOString()
+    });
+  });
+}
 
 async function normalizeStoredStudyContent(): Promise<void> {
   const marker = await db.settings.get('textNormalizationVersion');
@@ -64,6 +78,7 @@ export async function getUnit(number: number): Promise<UnitPayload> {
 }
 
 export async function seedOfflineDatabase(onProgress?: (done:number,total:number)=>void): Promise<void> {
+  await clearLegacyUploadedTextbooks();
   await normalizeStoredStudyContent();
   const manifest = await getManifest();
   const curated = await getCuratedData();
