@@ -13,5 +13,6 @@ describe('textbook text normalization', () => {
     expect(normalizeTextbookText('Tis is the teoreƟcal value.')).toBe('This is the theoretical value.');
     expect(normalizeTextbookText('Te shif engineer checked the shaf afer startup.')).toBe('The shift engineer checked the shaft after startup.');
     expect(normalizeTextbookText('Externally Àred boiler with SpeciÀc heat.')).toBe('Externally fired boiler with Specific heat.');
+    expect(normalizeTextbookText('Tree common types are used. Ten, they are checked on Tursday.')).toBe('Three common types are used. Then, they are checked on Thursday.');
   });
 });
