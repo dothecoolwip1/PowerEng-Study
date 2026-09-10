@@ -1,0 +1,67 @@
+{
+  "pages": 1858,
+  "units": 12,
+  "chapters": 56,
+  "unitStarts": [
+    [
+      5,
+      1,
+      "Elementary Mechanics and Dynamics"
+    ],
+    [
+      181,
+      2,
+      "Elementary Physical, Chemical, and Thermodynamic Principles"
+    ],
+    [
+      325,
+      3,
+      "Introduction to Power Engineering and its Governance in Canada"
+    ],
+    [
+      429,
+      4,
+      "Introduction to Plant and Fire Safety"
+    ],
+    [
+      589,
+      5,
+      "Introduction to Plant Operations and the Environment"
+    ],
+    [
+      695,
+      6,
+      "Elements of Material Science and Welding Technology"
+    ],
+    [
+      807,
+      7,
+      "Introductory Fluid Handling Technology"
+    ],
+    [
+      895,
+      8,
+      "Basic Concepts in Electrotechnology"
+    ],
+    [
+      1127,
+      9,
+      "Energy Plant Instrumentation and Controls"
+    ],
+    [
+      1343,
+      10,
+      "Fundamental Industrial Communication Skills"
+    ],
+    [
+      1439,
+      11,
+      "Introduction to Boiler Designs"
+    ],
+    [
+      1607,
+      12,
+      "Elements of Boiler Systems"
+    ]
+  ]
+}

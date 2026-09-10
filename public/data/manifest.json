@@ -1,0 +1,910 @@
+{
+  "course": {
+    "id": "fourth-class-part-a",
+    "name": "Fourth Class Power Engineering • Part A",
+    "level": "Fourth Class"
+  },
+  "textbook": {
+    "id": "panglobal-4a-ed35",
+    "title": "Power Engineering Fourth Class, Part A",
+    "edition": "3.5",
+    "revision": "September 2024",
+    "pdfPageCount": 1858,
+    "importVersion": "0.1.0",
+    "sourceFile": "under 100MB.pdf"
+  },
+  "units": [
+    {
+      "id": "a-1",
+      "number": 1,
+      "title": "Elementary Mechanics and Dynamics",
+      "startPdfPage": 5,
+      "endPdfPage": 180,
+      "chapters": [
+        {
+          "id": "a-1-c-1",
+          "number": 1,
+          "title": "Introduction to Basic Mechanics",
+          "learningOutcome": "Apply basic terms and calculations used in the study of mechanics.",
+          "learningObjectives": [
+            "1. Define mass, force, acceleration, velocity, and weight.",
+            "2. Perform simple calculations involving force, pressure, work, power, and energy."
+          ],
+          "startPdfPage": 9,
+          "endPdfPage": 20
+        },
+        {
+          "id": "a-1-c-2",
+          "number": 2,
+          "title": "Forces and Moments",
+          "learningOutcome": "Perform calculations involving forces and moments, and determine when a system of forces is in equilibrium.",
+          "learningObjectives": [
+            "1. Define the moment of a force and its units.",
+            "2. Determine the direction and calculate the magnitude of the moment of a force."
+          ],
+          "startPdfPage": 21,
+          "endPdfPage": 34
+        },
+        {
+          "id": "a-1-c-3",
+          "number": 3,
+          "title": "Simple Machines",
+          "learningOutcome": "Perform calculations relating to mechanical advantage, velocity ratio and efficiency.",
+          "learningObjectives": [
+            "1. Define the term simple machine and apply to calculations of mechanical advantage, velocity ratio and efficiency of simple machines."
+          ],
+          "startPdfPage": 35,
+          "endPdfPage": 54
+        },
+        {
+          "id": "a-1-c-4",
+          "number": 4,
+          "title": "Scalars and Vectors",
+          "learningOutcome": "Define and identify scalar and vector quantities and solve simple vector problems graphically.",
+          "learningObjectives": [
+            "1. Define scalar and vector quantities as they apply to drawing vector diagrams."
+          ],
+          "startPdfPage": 55,
+          "endPdfPage": 66
+        },
+        {
+          "id": "a-1-c-5",
+          "number": 5,
+          "title": "Linear Velocity and Acceleration",
+          "learningOutcome": "Solve simple problems involving linear velocity, time, and distance.",
+          "learningObjectives": [
+            "1. Solve distance, displacement, speed, and velocity problems.",
+            "2. Draw graphs of velocity as a function of time.",
+            "3. Define acceleration, state its units, and solve simple acceleration problems.",
+            "4. Apply mathematical formulae relating acceleration, velocity, distance and time to solve problems."
+          ],
+          "startPdfPage": 67,
+          "endPdfPage": 86
+        },
+        {
+          "id": "a-1-c-6",
+          "number": 6,
+          "title": "Force, Work, Pressure, Power, and Energy",
+          "learningOutcome": "Perform calculations involving force, work, pressure, power, and energy.",
+          "learningObjectives": [
+            "1. Perform calculations involving force and work.",
+            "2. Perform calculations involving gauge, atmospheric, and absolute pressure.",
+            "3. Perform calculations involving power and different forms of mechanical energy."
+          ],
+          "startPdfPage": 87,
+          "endPdfPage": 104
+        },
+        {
+          "id": "a-1-c-7",
+          "number": 7,
+          "title": "Friction",
+          "learningOutcome": "Solve problems involving friction.",
+          "learningObjectives": [
+            "1. Apply the laws governing the types of friction.",
+            "2. Apply the coefficient of friction to problems involving forces on a horizontal plane."
+          ],
+          "startPdfPage": 105,
+          "endPdfPage": 116
+        },
+        {
+          "id": "a-1-c-8",
+          "number": 8,
+          "title": "Stress and Strain",
+          "learningOutcome": "Explain physical properties of materials and how their behaviour is affected when external forces are applied.",
+          "learningObjectives": [
+            "1. Describe the mechanical properties of materials, including elasticity, stiffness, plasticity, ductility, toughness, brittleness, and hardness.",
+            "2. Calculate stress including tensile, compressive, and shear stresses within rigid bodies due to external loads.",
+            "3. Calculate the strain of members under load."
+          ],
+          "startPdfPage": 117,
+          "endPdfPage": 130
+        },
+        {
+          "id": "a-1-c-9",
+          "number": 9,
+          "title": "Power Transmission",
+          "learningOutcome": "Perform calculations pertaining to common power transmission systems.",
+          "learningObjectives": [
+            "1. Calculate pulley speeds, transmitted power, and efficiency of belt drive systems.",
+            "2. Calculate gear speeds for gear and chain drive systems."
+          ],
+          "startPdfPage": 131,
+          "endPdfPage": 180
+        }
+      ]
+    },
+    {
+      "id": "a-2",
+      "number": 2,
+      "title": "Elementary Physical, Chemical, and Thermodynamic Principles",
+      "startPdfPage": 181,
+      "endPdfPage": 324,
+      "chapters": [
+        {
+          "id": "a-2-c-1",
+          "number": 1,
+          "title": "Introduction to Matter and Chemistry",
+          "learningOutcome": "Identify basic types of matter, their properties, and the associated chemical principles.",
+          "learningObjectives": [
+            "1. Differentiate among the physical states of matter.",
+            "2. Differentiate between chemical and physical changes in matter.",
+            "3. Classify matter as either a type of mixture or a pure substance.",
+            "4. Describe the purpose and uses of the periodic table using the parts of an atom.",
+            "5. Describe the three main ways atoms bond together: covalent, ionic, and metallic bonding.",
+            "6. Discuss chemical equations and their purpose.",
+            "7. Perform simple stoichiometric calculations.",
+            "8. Demonstrate how unstable compounds are combined to make stable compounds."
+          ],
+          "startPdfPage": 185,
+          "endPdfPage": 212
+        },
+        {
+          "id": "a-2-c-2",
+          "number": 2,
+          "title": "Introduction to Thermodynamics",
+          "learningOutcome": "Explain the principles and laws of thermodynamics.",
+          "learningObjectives": [
+            "1. Define the first two laws of thermodynamics.",
+            "2. Define heat and specific heat, and perform sensible heat calculations.",
+            "3. Describe the expansion of solids and liquids."
+          ],
+          "startPdfPage": 213,
+          "endPdfPage": 234
+        },
+        {
+          "id": "a-2-c-3",
+          "number": 3,
+          "title": "Introduction to Heat Transfer and Heat Exchangers",
+          "learningOutcome": "Explain the modes of heat transfer and the theory of heat exchanger operation.",
+          "learningObjectives": [
+            "1. Describe the three modes of heat transfer with reference to heat exchangers.",
+            "2. Discuss the general design and construction of typical heat exchangers.",
+            "3. Describe heat transfer Àuids and how they affect the operation of a heat exchanger, including fouling, leakage, and vapour locking.",
+            "4. Describe heat exchanger inspection, maintenance, and operation, including placing them in service and removing them from service."
+          ],
+          "startPdfPage": 235,
+          "endPdfPage": 264
+        },
+        {
+          "id": "a-2-c-4",
+          "number": 4,
+          "title": "Thermodynamics of Steam",
+          "learningOutcome": "Apply the thermodynamics principles through practical applications using the steam tables and the temperature-enthalpy chart.",
+          "learningObjectives": [
+            "1. Describe heat as it relates to steam, water, and ice.",
+            "2. Explain the various columns of the steam tables.",
+            "3. Explain the thermodynamic principles of steam, using the steam tables."
+          ],
+          "startPdfPage": 265,
+          "endPdfPage": 324
+        }
+      ]
+    },
+    {
+      "id": "a-3",
+      "number": 3,
+      "title": "Introduction to Power Engineering and its Governance in Canada",
+      "startPdfPage": 325,
+      "endPdfPage": 428,
+      "chapters": [
+        {
+          "id": "a-3-c-1",
+          "number": 1,
+          "title": "Introduction to Power Engineering",
+          "learningOutcome": "Describe the Power Engineer profession.",
+          "learningObjectives": [
+            "1. Describe steam, its uses and the basic steam cycle.",
+            "2. Describe the role and duties of a Power Engineer.",
+            "3. Describe how shift work affects sleep patterns, diet, and overall health."
+          ],
+          "startPdfPage": 329,
+          "endPdfPage": 350
+        },
+        {
+          "id": "a-3-c-2",
+          "number": 2,
+          "title": "Jurisdictional Legislation for Power Engineers",
+          "learningOutcome": "Describe the application of Jurisdictional Acts and Regulations with respect to boilers and pressure vessels.",
+          "learningObjectives": [
+            "1. Describe how the Power Engineering profession is regulated in Canada.",
+            "2. Explain the purpose and scope of your Jurisdictional Act and Regulations pertaining to Power Engineering and Pressure Equipment.",
+            "3. Explain the purpose and intent of the Regulations governing Power Engineers and Pressure Welders."
+          ],
+          "startPdfPage": 351,
+          "endPdfPage": 370
+        },
+        {
+          "id": "a-3-c-3",
+          "number": 3,
+          "title": "Codes and Standards for Power Engineers and Pressure Vessels",
+          "learningOutcome": "Describe the purpose of boiler and pressure vessel Codes and Standards.",
+          "learningObjectives": [
+            "1. Discuss the history of how codes and standards became necessary in the pressure equipment field.",
+            "2. Explain the content and use of the CSA B51 Boiler, Pressure Vessel, and Pressure Piping Code.",
+            "3. Explain the content and use of the CSA B52 Mechanical Refrigeration Code.",
+            "4. Explain the content and use of ASME Boiler and Pressure Vessel Code (ASME BPVC) Section I Power Boilers.",
+            "5. Explain the content and use of ASME BPVC Section VII - Recommended Guidelines for the Care of Power Boilers.",
+            "6. Explain the content and use of ASME BPVC Section IV - Rules for Construction of Heating Boilers.",
+            "7. Explain the content and use of ASME BPVC Section VI - Recommended Rules for Care and Operation of Heating Boilers.",
+            "8. Explain the purpose, intent, and limitation of ASME CSD-1 (Controls and Safety Devices) Standard."
+          ],
+          "startPdfPage": 371,
+          "endPdfPage": 428
+        }
+      ]
+    },
+    {
+      "id": "a-4",
+      "number": 4,
+      "title": "Introduction to Plant and Fire Safety",
+      "startPdfPage": 429,
+      "endPdfPage": 588,
+      "chapters": [
+        {
+          "id": "a-4-c-1",
+          "number": 1,
+          "title": "4th Class Edition 3.5 • Part A Introduction to Plant Safety",
+          "learningOutcome": "Describe general plant safety as it relates to Power Engineers.",
+          "learningObjectives": [
+            "1. Discuss the cost and effects of workplace accidents.",
+            "2. Describe the basic hazards that may be in an energy plant, and the basic personal protective equipment that may be required.",
+            "3. Define, give examples of, and describe common power house hazards.",
+            "4. Describe industrial health and safety management systems.",
+            "5. Describe hazard assessment and control programs. • Unit 4"
+          ],
+          "startPdfPage": 433,
+          "endPdfPage": 464
+        },
+        {
+          "id": "a-4-c-2",
+          "number": 2,
+          "title": "Plant Safety Programs",
+          "learningOutcome": "Describe common safety programs generally applied in plants.",
+          "learningObjectives": [
+            "1. Describe common occupational health and safety (OH&S) programs found in most plants.",
+            "2. Describe industrial safety programs in which Power Engineers may require additional training.",
+            "3. Discuss safe work permits.",
+            "4. Describe methods of equipment isolation and lock out."
+          ],
+          "startPdfPage": 465,
+          "endPdfPage": 488
+        },
+        {
+          "id": "a-4-c-3",
+          "number": 3,
+          "title": "Handling of Dangerous Materials",
+          "learningOutcome": "Describe the policies and procedures for safe storage and handling of dangerous materials.",
+          "learningObjectives": [
+            "1. Discuss the WHMIS system.",
+            "2. Discuss the essential components required in the WHMIS systems.",
+            "3. Describe the safe handling and use of gas cylinders in an energy plant (power plant).",
+            "4. Discuss the safe handling of hydrocarbons."
+          ],
+          "startPdfPage": 489,
+          "endPdfPage": 502
+        },
+        {
+          "id": "a-4-c-4",
+          "number": 4,
+          "title": "Plant Fire Safety",
+          "learningOutcome": "Explain fire safety in an industrial plant.",
+          "learningObjectives": [
+            "1. Discuss the theory, terminology, and the life safety issues associated with fires.",
+            "2. Explain the five classes of fires, and describe the types of fire extinguishing media and how they act on these fires.",
+            "3. Explain fire prevention.",
+            "4. Discuss fire prevention methods for the five types of fires."
+          ],
+          "startPdfPage": 503,
+          "endPdfPage": 528
+        },
+        {
+          "id": "a-4-c-5",
+          "number": 5,
+          "title": "Fire Extinguishing Methods and Equipment",
+          "learningOutcome": "Describe typical fire extinguishing equipment and its operation in plant environments.",
+          "learningObjectives": [
+            "1. Describe the construction and operation of various types of portable fire extinguishers.",
+            "2. Discuss the inspection and maintenance requirements of portable fire extinguishers.",
+            "3. Describe the types, layout, and operation of standpipe and sprinkler systems.",
+            "4. Discuss the maintenance requirements of standpipe and sprinkler system components.",
+            "5. Describe the purpose, operation, and maintenance of fire pumps."
+          ],
+          "startPdfPage": 529,
+          "endPdfPage": 588
+        }
+      ]
+    },
+    {
+      "id": "a-5",
+      "number": 5,
+      "title": "Introduction to Plant Operations and the Environment",
+      "startPdfPage": 589,
+      "endPdfPage": 694,
+      "chapters": [
+        {
+          "id": "a-5-c-1",
+          "number": 1,
+          "title": "Introduction to the Environment",
+          "learningOutcome": "Identify environmental considerations and how they relate to an operating plant.",
+          "learningObjectives": [
+            "1. Describe four important Biogeochemical Cycles that operate within the environment.",
+            "2. Describe typical interdependencies seen among elements within an “ecosystem.”",
+            "3. List the types of impacts that operating facilities can have on the environment.",
+            "4. Describe the alert processes related to environmental problems of plants.",
+            "5. Explain the importance of “attitude” in limiting environmental impacts of plants.",
+            "6. Describe the long-term environmental impacts after the decommissioning and abandonment of plants."
+          ],
+          "startPdfPage": 593,
+          "endPdfPage": 620
+        },
+        {
+          "id": "a-5-c-2",
+          "number": 2,
+          "title": "Gas and Noise Emissions",
+          "learningOutcome": "Explain how gas and noise emissions affect plant operations.",
+          "learningObjectives": [
+            "1. Identify the sources and effects of common gases and vapours that have an adverse environmental impact.",
+            "2. Identify the common greenhouse and acid rain causing gases and describe their effects.",
+            "3. Describe the common methods for monitoring and reducing gaseous pollutants.",
+            "4. Describe the effects of noise pollution and methods of identifying, measuring, and controlling it."
+          ],
+          "startPdfPage": 621,
+          "endPdfPage": 652
+        },
+        {
+          "id": "a-5-c-3",
+          "number": 3,
+          "title": "Liquid and Solid Emissions",
+          "learningOutcome": "Explain how liquid and solid emissions affect plant operation.",
+          "learningObjectives": [
+            "1. Describe the sources and effects of solid pollutants from energy plants.",
+            "2. Describe the theory of operation of separators/collectors and monitoring of flue gas particulates.",
+            "3. Describe the disposal methods of solid waste from energy plants.",
+            "4. List sources and effects of liquid and thermal pollution.",
+            "5. Describe the preventive measures that can be taken to prevent liquid and thermal pollution.",
+            "6. Describe methods of liquid waste disposal."
+          ],
+          "startPdfPage": 653,
+          "endPdfPage": 694
+        }
+      ]
+    },
+    {
+      "id": "a-6",
+      "number": 6,
+      "title": "Elements of Material Science and Welding Technology",
+      "startPdfPage": 695,
+      "endPdfPage": 806,
+      "chapters": [
+        {
+          "id": "a-6-c-1",
+          "number": 1,
+          "title": "Energy Plant Construction and Operation Materials",
+          "learningOutcome": "Describe the mechanical properties of engineering materials used in engineering.",
+          "learningObjectives": [
+            "1. Describe the mechanical properties of materials.",
+            "2. Describe the various types of ferrous materials.",
+            "3. Describe the various types of non-ferrous materials."
+          ],
+          "startPdfPage": 699,
+          "endPdfPage": 714
+        },
+        {
+          "id": "a-6-c-2",
+          "number": 2,
+          "title": "Introduction to Welding",
+          "learningOutcome": "Describe welding processes relevant to the plant and Power Engineering.",
+          "learningObjectives": [
+            "1. Describe non-fusion welding process, equipment used, and methods.",
+            "2. Describe forge and oxy-fuel fusion welding processes and cutting processes.",
+            "3. Describe metal arc welding processes.",
+            "4. Describe heat treatment of welds.",
+            "5. Describe the types of weld joints used in pressure vessel construction.",
+            "6. Describe the additional construction components required for pressure vessels to ensure structural integrity and “access.”"
+          ],
+          "startPdfPage": 715,
+          "endPdfPage": 754
+        },
+        {
+          "id": "a-6-c-3",
+          "number": 3,
+          "title": "Boiler and Pressure Vessel Weld Inspection",
+          "learningOutcome": "Describe inspection processes and testing methods for welds and materials.",
+          "learningObjectives": [
+            "1. Describe common weld defects.",
+            "2. Describe the process of Visual Testing of welds.",
+            "3. Describe the process of Penetrant Testing for detecting weld or material defects.",
+            "4. Describe the process of radiographic weld testing.",
+            "5. Describe the process of ultrasonic weld testing."
+          ],
+          "startPdfPage": 755,
+          "endPdfPage": 806
+        }
+      ]
+    },
+    {
+      "id": "a-7",
+      "number": 7,
+      "title": "Introductory Fluid Handling Technology",
+      "startPdfPage": 807,
+      "endPdfPage": 894,
+      "chapters": [
+        {
+          "id": "a-7-c-1",
+          "number": 1,
+          "title": "Introduction to Energy Plant Piping Systems",
+          "learningOutcome": "Discuss the basic types of piping, piping connections, supports, and drainage devices used in industry.",
+          "learningObjectives": [
+            "1. State the applications for the most common materials and identify the sizes of commercial pipe.",
+            "2. Describe methods of connection for screwed, flanged, and welded pipe; identify fittings and their markings.",
+            "3. Describe methods and devices used to allow for pipe expansion and support.",
+            "4. Explain the methods used to promote good drainage of steam pipes, including the installation and maintenance of steam traps, to reduce the effects of water hammer.",
+            "5. Explain the requirements, materials, and methods for insulating pipe."
+          ],
+          "startPdfPage": 811,
+          "endPdfPage": 844
+        },
+        {
+          "id": "a-7-c-2",
+          "number": 2,
+          "title": "Introduction to Energy Plant Valves",
+          "learningOutcome": "Discuss the design and uses of the valve designs most commonly used in industry and on boilers.",
+          "learningObjectives": [
+            "1. Describe standard valve designs.",
+            "2. Describe design and operation of specialized boiler valves.",
+            "3. Describe a typical steam pressure reducing station, and the design and operation of steam system pressure-reducing valves.",
+            "4. Discuss valve details, including materials of construction and identification markings.",
+            "5. Describe typical valve maintenance requirements."
+          ],
+          "startPdfPage": 845,
+          "endPdfPage": 894
+        }
+      ]
+    },
+    {
+      "id": "a-8",
+      "number": 8,
+      "title": "Basic Concepts in Electrotechnology",
+      "startPdfPage": 895,
+      "endPdfPage": 1126,
+      "chapters": [
+        {
+          "id": "a-8-c-1",
+          "number": 1,
+          "title": "Basic Electricity",
+          "learningOutcome": "Apply the concepts of basic electricity while performing simple calculations using voltage, current, resistance, and power.",
+          "learningObjectives": [
+            "1. Describe the atomic structure of matter and its relationship to electricity.",
+            "2. Describe basic electrical circuits.",
+            "3. State Ohm’s Law and apply it to single-resistor circuits.",
+            "4. Apply Ohm’s Law to series resistance circuits.",
+            "5. Apply Ohm’s Law to parallel resistance circuits.",
+            "6. Explain electrical conductors and insulators using examples.",
+            "7. Explain the factors that affect resistance mathematically.",
+            "8. Calculate the power developed in an electrical circuit."
+          ],
+          "startPdfPage": 899,
+          "endPdfPage": 934
+        },
+        {
+          "id": "a-8-c-2",
+          "number": 2,
+          "title": "Magnetism and Electromagnetism",
+          "learningOutcome": "Describe the basic principles of magnetism.",
+          "learningObjectives": [
+            "1. Describe magnetism and the relationship between magnetism and electricity.",
+            "2. Describe the relationship between electricity and magnetism in an electrical generator.",
+            "3. Describe the relationship between electricity and magnetism in an electric motor."
+          ],
+          "startPdfPage": 935,
+          "endPdfPage": 954
+        },
+        {
+          "id": "a-8-c-3",
+          "number": 3,
+          "title": "Electrical Metering Devices",
+          "learningOutcome": "Describe the design and application of electrical metering devices.",
+          "learningObjectives": [
+            "1. Describe electrical meters and their uses.",
+            "2. Describe how voltage, current, and resistance are measured in an electric circuit.",
+            "3. Describe the construction and operation of a kilowatt hour meter."
+          ],
+          "startPdfPage": 955,
+          "endPdfPage": 972
+        },
+        {
+          "id": "a-8-c-4",
+          "number": 4,
+          "title": "Motors and Generators",
+          "learningOutcome": "Describe the operating principles of the various types of AC and DC motors and generators.",
+          "learningObjectives": [
+            "1. Describe the construction and operation of DC generators and motors.",
+            "2. Describe the construction and operation of AC generators (alternators) and motors.",
+            "3. Interpret the information on a motor nameplate.",
+            "4. Perform basic calculations relating to power factor and power factor correction."
+          ],
+          "startPdfPage": 973,
+          "endPdfPage": 1018
+        },
+        {
+          "id": "a-8-c-5",
+          "number": 5,
+          "title": "Transformers",
+          "learningOutcome": "Describe the operating principles of electrical transformers.",
+          "learningObjectives": [
+            "1. Describe the principle of operation of transformers.",
+            "2. Perform basic transformer calculations as they relate to the construction and operation of single-phase transformers.",
+            "3. Describe the construction and operation of three-phase transformers.",
+            "4. Discuss special transformer types and their applications.",
+            "5. Discuss transformer cooling, safety, and maintenance."
+          ],
+          "startPdfPage": 1019,
+          "endPdfPage": 1040
+        },
+        {
+          "id": "a-8-c-6",
+          "number": 6,
+          "title": "Electrical Distribution Circuits",
+          "learningOutcome": "Describe an electrical distribution system.",
+          "learningObjectives": [
+            "1. List and describe the standard types of electrical voltage systems.",
+            "2. Interpret electrical single-line diagrams and circuit symbols.",
+            "3. Describe the major components of an electrical distribution system.",
+            "4. Describe the function and operation of fuses and circuit breakers.",
+            "5. Describe the function and operation of alternate power supply system equipment."
+          ],
+          "startPdfPage": 1041,
+          "endPdfPage": 1126
+        }
+      ]
+    },
+    {
+      "id": "a-9",
+      "number": 9,
+      "title": "Energy Plant Instrumentation and Controls",
+      "startPdfPage": 1127,
+      "endPdfPage": 1342,
+      "chapters": [
+        {
+          "id": "a-9-c-1",
+          "number": 1,
+          "title": "Introduction to Energy Plant Controls and Instrumentation",
+          "learningOutcome": "Describe the overall purpose and function of plant instrumentation systems.",
+          "learningObjectives": [
+            "1. Describe the concept and basic components of a control loop.",
+            "2. Describe the various means by which control signals are transmitted, and the function of transducers.",
+            "3. List and describe the types of instruments that are not control loop components."
+          ],
+          "startPdfPage": 1131,
+          "endPdfPage": 1152
+        },
+        {
+          "id": "a-9-c-2",
+          "number": 2,
+          "title": "Introduction to Process Measurement",
+          "learningOutcome": "Describe the construction and operation of common devices used to measure pressure, level, flow, temperature, humidity, and composition.",
+          "learningObjectives": [
+            "1. Describe the types of pressure sensing and measuring devices.",
+            "2. Describe the types of level sensing and measuring devices.",
+            "3. Describe the types of flow sensing and measuring devices.",
+            "4. Describe the types of temperature sensing and measuring devices.",
+            "5. Describe the types of humidity sensing and measuring devices.",
+            "6. Describe the types of gas sensing and measuring devices."
+          ],
+          "startPdfPage": 1153,
+          "endPdfPage": 1198
+        },
+        {
+          "id": "a-9-c-3",
+          "number": 3,
+          "title": "Basic Control and Instrumentation Components",
+          "learningOutcome": "Describe the basic types and functions of transmitters, recorders, controllers, and control actuators.",
+          "learningObjectives": [
+            "1. Describe the construction and operational principles of instrumentation transmitters.",
+            "2. Describe the construction and operational principles of instrumentation indicators and recorders.",
+            "3. Describe the construction and operational principles of instrumentation controllers.",
+            "4. Describe the construction and operational principles of final control elements."
+          ],
+          "startPdfPage": 1199,
+          "endPdfPage": 1232
+        },
+        {
+          "id": "a-9-c-4",
+          "number": 4,
+          "title": "Introduction to Programmable Controllers",
+          "learningOutcome": "Describe the operation of programming controls for boilers, including applicable testing and maintenance procedures.",
+          "learningObjectives": [
+            "1. Discuss how programmable controllers work and how they act as sequencers for equipment.",
+            "2. Describe applications of programmable controllers.",
+            "3. Explain the HMI (human machine interface) and purpose of touchscreen displays, functions, and alarm handling."
+          ],
+          "startPdfPage": 1233,
+          "endPdfPage": 1248
+        },
+        {
+          "id": "a-9-c-5",
+          "number": 5,
+          "title": "Electronic Control Systems and Computer Applications",
+          "learningOutcome": "Describe the design and operation of electronic control systems.",
+          "learningObjectives": [
+            "1. Discuss electronic process control systems.",
+            "2. Describe computers and how they operate within control systems.",
+            "3. Describe the applications of computerized control systems and plant computers."
+          ],
+          "startPdfPage": 1249,
+          "endPdfPage": 1270
+        },
+        {
+          "id": "a-9-c-6",
+          "number": 6,
+          "title": "Electrical Control Systems",
+          "learningOutcome": "Describe the design and operation of electrical control systems.",
+          "learningObjectives": [
+            "1. Describe the basic construction and operation of various electric control system components.",
+            "2. Describe the function of control devices in electric control systems.",
+            "3. Explain the operating sequence of basic electric control circuits."
+          ],
+          "startPdfPage": 1271,
+          "endPdfPage": 1342
+        }
+      ]
+    },
+    {
+      "id": "a-10",
+      "number": 10,
+      "title": "Fundamental Industrial Communication Skills",
+      "startPdfPage": 1343,
+      "endPdfPage": 1438,
+      "chapters": [
+        {
+          "id": "a-10-c-1",
+          "number": 1,
+          "title": "Energy Plant Sketching",
+          "learningOutcome": "Create engineering equipment sketches.",
+          "learningObjectives": [
+            "1. Create sketches using centre lines and dimensioning.",
+            "2. Recognize standard views of an object.",
+            "3. Recognize cross-hatching methods in sectional drawings.",
+            "4. Identify common symbols and lines used in plant system trace drawings.",
+            "5. Complete a plant line tracing."
+          ],
+          "startPdfPage": 1347,
+          "endPdfPage": 1370
+        },
+        {
+          "id": "a-10-c-2",
+          "number": 2,
+          "title": "Plant Diagrams and Drawings",
+          "learningOutcome": "Identify common types of diagrams used in plants.",
+          "learningObjectives": [
+            "1. Explain the layout of plant diagrams.",
+            "2. Explain the use of process flow diagrams (PFDs).",
+            "3. Explain the use of piping and instrumentation diagrams (P&IDs).",
+            "4. Explain the use of general arrangement, block plans, and equipment diagrams."
+          ],
+          "startPdfPage": 1371,
+          "endPdfPage": 1390
+        },
+        {
+          "id": "a-10-c-3",
+          "number": 3,
+          "title": "Plant Communications",
+          "learningOutcome": "Describe the types and proper usage of plant communication systems.",
+          "learningObjectives": [
+            "1. Discuss effective written and verbal communication skills, including the use of two-way radios.",
+            "2. Describe the legal documentation requirements for Power Engineers, including log books and log sheets.",
+            "3. Discuss the elements of Maintenance Management Systems, including work requests and work orders.",
+            "4. Discuss the purpose, revision, and control of Standard Operating Procedures.",
+            "5. Discuss updating procedures for piping and instrumentation diagrams."
+          ],
+          "startPdfPage": 1391,
+          "endPdfPage": 1438
+        }
+      ]
+    },
+    {
+      "id": "a-11",
+      "number": 11,
+      "title": "Introduction to Boiler Designs",
+      "startPdfPage": 1439,
+      "endPdfPage": 1606,
+      "chapters": [
+        {
+          "id": "a-11-c-1",
+          "number": 1,
+          "title": "Introduction to Boilers",
+          "learningOutcome": "Describe the historical development of boilers, boiler design, components, and configuration.",
+          "learningObjectives": [
+            "1. Describe the history of boiler applications, boiler design, and modern boiler improvements.",
+            "2. Describe packaged boilers.",
+            "3. Describe the construction of shop-assembled and field-erected boilers.",
+            "4. Describe components and design aspects common to all boiler vessels."
+          ],
+          "startPdfPage": 1443,
+          "endPdfPage": 1470
+        },
+        {
+          "id": "a-11-c-2",
+          "number": 2,
+          "title": "Firetube Boilers",
+          "learningOutcome": "Describe the design, components, and characteristics of firetube boilers.",
+          "learningObjectives": [
+            "1. Differentiate the Scotch Boiler from the other firetube boilers, and describe its development history.",
+            "2. Describe circulation patterns in firetube boilers.",
+            "3. Discuss construction details of firetube boilers."
+          ],
+          "startPdfPage": 1471,
+          "endPdfPage": 1496
+        },
+        {
+          "id": "a-11-c-3",
+          "number": 3,
+          "title": "Watertube Boilers",
+          "learningOutcome": "Describe the design, components, and characteristics of watertube boilers.",
+          "learningObjectives": [
+            "1. Describe the design and operating principles of watertube boilers.",
+            "2. Describe watertube boiler components.",
+            "3. Explain the design and application of packaged watertube boilers.",
+            "4. Describe the design, construction, and components of large-scale steam generating units."
+          ],
+          "startPdfPage": 1497,
+          "endPdfPage": 1524
+        },
+        {
+          "id": "a-11-c-4",
+          "number": 4,
+          "title": "Electric Boilers",
+          "learningOutcome": "Explain the general design and application of electric boilers.",
+          "learningObjectives": [
+            "1. Discuss the advantages and disadvantages of electric boilers.",
+            "2. Describe the construction and operating principle of electric boilers."
+          ],
+          "startPdfPage": 1525,
+          "endPdfPage": 1534
+        },
+        {
+          "id": "a-11-c-5",
+          "number": 5,
+          "title": "Special Boiler Designs for Heating Plants",
+          "learningOutcome": "Describe the special design considerations of boilers used in heating plants.",
+          "learningObjectives": [
+            "1. Describe the design of watertube and coil tube heating boilers.",
+            "2. Describe cast iron boilers and vertical firetube boilers.",
+            "3. Describe the construction and application of firetube heating boiler designs."
+          ],
+          "startPdfPage": 1535,
+          "endPdfPage": 1556
+        },
+        {
+          "id": "a-11-c-6",
+          "number": 6,
+          "title": "Differences between Power and Heating Boilers",
+          "learningOutcome": "Differentiate between ASME Section I and ASME Section IV boilers.",
+          "learningObjectives": [
+            "1. Discuss the differences between power boiler and heating boiler design and installation.",
+            "2. Discuss the differences between power boiler and heating boiler operation."
+          ],
+          "startPdfPage": 1557,
+          "endPdfPage": 1606
+        }
+      ]
+    },
+    {
+      "id": "a-12",
+      "number": 12,
+      "title": "Elements of Boiler Systems",
+      "startPdfPage": 1607,
+      "endPdfPage": 1858,
+      "chapters": [
+        {
+          "id": "a-12-c-1",
+          "number": 1,
+          "title": "Combustion",
+          "learningOutcome": "Discuss the basic theory of combustion, and the equipment used to provide proper combustion conditions within a boiler.",
+          "learningObjectives": [
+            "1. Discuss combustion, combustion equations, and the relationship between theoretical and excess air.",
+            "2. Discuss the characteristics of solid, liquid, and gaseous fuels.",
+            "3. Explain the effects of fuels and combustion on refractory materials."
+          ],
+          "startPdfPage": 1611,
+          "endPdfPage": 1632
+        },
+        {
+          "id": "a-12-c-2",
+          "number": 2,
+          "title": "Fuel Delivery and Firing Systems",
+          "learningOutcome": "Describe common fuel systems found in boiler systems.",
+          "learningObjectives": [
+            "1. Describe solid fuel delivery systems.",
+            "2. Describe the main types of solid fuel firing systems.",
+            "3. Describe gaseous fuel delivery systems.",
+            "4. Describe the main types of gaseous fuel firing systems.",
+            "5. Describe liquid fuel delivery systems.",
+            "6. Describe the main types of liquid fuel firing systems.",
+            "7. Describe Àue gas analysis and how it relates to boiler efficiency."
+          ],
+          "startPdfPage": 1633,
+          "endPdfPage": 1700
+        },
+        {
+          "id": "a-12-c-3",
+          "number": 3,
+          "title": "Draft",
+          "learningOutcome": "Describe basic concepts and equipment used to supply combustion air to boiler furnaces.",
+          "learningObjectives": [
+            "1. Describe the various air streams that deliver combustion air to a furnace.",
+            "2. Relate differential pressure to the creation of draft.",
+            "3. Describe forced, induced, and balanced mechanical draft.",
+            "4. Discuss common methods of controlling combustion airÀow.",
+            "5. Discuss common methods of measuring furnace pressures."
+          ],
+          "startPdfPage": 1701,
+          "endPdfPage": 1728
+        },
+        {
+          "id": "a-12-c-4",
+          "number": 4,
+          "title": "Feedwater Systems",
+          "learningOutcome": "Describe feedwater systems used with boilers.",
+          "learningObjectives": [
+            "1. Describe the overall layout of feedwater, condensate, and make-up water systems.",
+            "2. Describe the valves used in feedwater systems.",
+            "3. Describe the control strategies for single-element, two-element, and three-element boiler feedwater systems.",
+            "4. Describe methods of supplying feedwater to steam heating boilers.",
+            "5. Explain the operation of condensate receiver make-up water controls.",
+            "6. Describe the return of condensate, and the supply of feedwater to high-pressure boilers."
+          ],
+          "startPdfPage": 1729,
+          "endPdfPage": 1772
+        },
+        {
+          "id": "a-12-c-5",
+          "number": 5,
+          "title": "Blowoff and Blowdown Systems",
+          "learningOutcome": "Describe the equipment, operation, and purpose of boiler blowoff and blowdown systems.",
+          "learningObjectives": [
+            "1. Describe blowoff, blowoff equipment, and blowoff procedures.",
+            "2. Describe continuous blowdown, blowdown equipment, and blowdown procedures.",
+            "3. Describe the maintenance and repair of blowoff systems."
+          ],
+          "startPdfPage": 1773,
+          "endPdfPage": 1798
+        },
+        {
+          "id": "a-12-c-6",
+          "number": 6,
+          "title": "Boiler Fireside Cleaning Systems",
+          "learningOutcome": "Describe types of boiler fireside cleaning equipment, their purpose, and their operation.",
+          "learningObjectives": [
+            "1. Describe common options for in-service fireside cleaning.",
+            "2. Describe the construction and operation of retractable soot blowers.",
+            "3. Describe the construction and operation of stationary soot blowers.",
+            "4. Describe falling shot cleaning methods."
+          ],
+          "startPdfPage": 1799,
+          "endPdfPage": 1858
+        }
+      ]
+    }
+  ]
+}

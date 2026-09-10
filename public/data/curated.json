@@ -1,0 +1,393 @@
+{
+  "formulas": [
+    {
+      "id": "velocity",
+      "name": "Velocity",
+      "expression": "v = \\frac{\\Delta s}{t}",
+      "plainExpression": "v = displacement / time",
+      "description": "Calculates velocity from displacement over time.",
+      "variables": [
+        {"symbol":"v","meaning":"velocity","unit":"m/s"},
+        {"symbol":"Δs","meaning":"displacement","unit":"m"},
+        {"symbol":"t","meaning":"time","unit":"s"}
+      ],
+      "chapterId":"a-1-c-1","sourcePages":[12],"tags":["mechanics","velocity"],"verificationStatus":"verified"
+    },
+    {
+      "id": "acceleration",
+      "name": "Acceleration",
+      "expression": "a = \\frac{v-u}{t}",
+      "plainExpression": "a = (final velocity - initial velocity) / time",
+      "description": "Calculates uniform acceleration from the change in velocity over time.",
+      "variables": [
+        {"symbol":"a","meaning":"acceleration","unit":"m/s²"},
+        {"symbol":"u","meaning":"initial velocity","unit":"m/s"},
+        {"symbol":"v","meaning":"final velocity","unit":"m/s"},
+        {"symbol":"t","meaning":"time","unit":"s"}
+      ],
+      "chapterId":"a-1-c-5","sourcePages":[79],"tags":["mechanics","acceleration","kinematics"],"verificationStatus":"verified"
+    },
+    {
+      "id": "force",
+      "name": "Force",
+      "expression": "F = ma",
+      "plainExpression": "F = mass × acceleration",
+      "description": "Relates force, mass, and acceleration.",
+      "variables": [
+        {"symbol":"F","meaning":"force","unit":"N"},
+        {"symbol":"m","meaning":"mass","unit":"kg"},
+        {"symbol":"a","meaning":"acceleration","unit":"m/s²"}
+      ],
+      "chapterId":"a-1-c-1","sourcePages":[13],"tags":["force","Newton"],"verificationStatus":"verified"
+    },
+    {
+      "id": "gravity-force",
+      "name": "Force of Gravity",
+      "expression": "F_g = mg",
+      "plainExpression": "force of gravity = mass × 9.81 m/s²",
+      "description": "Calculates the force of gravity acting on a mass near the Earth's surface using the textbook value of 9.81 m/s².",
+      "variables": [
+        {"symbol":"F_g","meaning":"force due to gravity","unit":"N"},
+        {"symbol":"m","meaning":"mass","unit":"kg"},
+        {"symbol":"g","meaning":"acceleration due to gravity","unit":"9.81 m/s²"}
+      ],
+      "chapterId":"a-1-c-1","sourcePages":[14],"tags":["gravity","force","constant"],"verificationStatus":"verified"
+    },
+    {
+      "id": "pressure",
+      "name": "Pressure",
+      "expression": "P = \\frac{F}{A}",
+      "plainExpression": "pressure = force / area",
+      "description": "Calculates pressure from force acting uniformly over an area.",
+      "variables": [
+        {"symbol":"P","meaning":"pressure","unit":"Pa"},
+        {"symbol":"F","meaning":"force","unit":"N"},
+        {"symbol":"A","meaning":"area","unit":"m²"}
+      ],
+      "chapterId":"a-1-c-6","sourcePages":[95],"tags":["pressure","force"],"verificationStatus":"verified"
+    },
+    {
+      "id": "work",
+      "name": "Work",
+      "expression": "W = Fd",
+      "plainExpression": "work = force × distance",
+      "description": "Calculates work when a force moves through a distance in the direction of the force.",
+      "variables": [
+        {"symbol":"W","meaning":"work","unit":"J"},
+        {"symbol":"F","meaning":"force","unit":"N"},
+        {"symbol":"d","meaning":"distance","unit":"m"}
+      ],
+      "chapterId":"a-1-c-6","sourcePages":[90],"tags":["work","energy"],"verificationStatus":"verified"
+    },
+    {
+      "id": "power",
+      "name": "Power",
+      "expression": "P = \\frac{W}{t}",
+      "plainExpression": "power = work / time",
+      "description": "Calculates the rate of doing work.",
+      "variables": [
+        {"symbol":"P","meaning":"power","unit":"W"},
+        {"symbol":"W","meaning":"work","unit":"J"},
+        {"symbol":"t","meaning":"time","unit":"s"}
+      ],
+      "chapterId":"a-1-c-6","sourcePages":[97],"tags":["power","work"],"verificationStatus":"verified"
+    },
+    {
+      "id": "potential-energy",
+      "name": "Gravitational Potential Energy",
+      "expression": "PE = mgh",
+      "plainExpression": "potential energy = mass × gravity × vertical height",
+      "description": "Calculates gravitational potential energy from mass and vertical height.",
+      "variables": [
+        {"symbol":"PE","meaning":"potential energy","unit":"J"},
+        {"symbol":"m","meaning":"mass","unit":"kg"},
+        {"symbol":"g","meaning":"acceleration due to gravity","unit":"9.81 m/s²"},
+        {"symbol":"h","meaning":"vertical height","unit":"m"}
+      ],
+      "chapterId":"a-1-c-6","sourcePages":[99],"tags":["energy","potential energy"],"verificationStatus":"verified"
+    },
+    {
+      "id": "kinetic-energy",
+      "name": "Kinetic Energy",
+      "expression": "KE = \\frac{1}{2}mv^2",
+      "plainExpression": "kinetic energy = 0.5 × mass × velocity²",
+      "description": "Calculates the mechanical energy a body has because of motion.",
+      "variables": [
+        {"symbol":"KE","meaning":"kinetic energy","unit":"J"},
+        {"symbol":"m","meaning":"mass","unit":"kg"},
+        {"symbol":"v","meaning":"velocity","unit":"m/s"}
+      ],
+      "chapterId":"a-1-c-6","sourcePages":[100],"tags":["energy","kinetic energy"],"verificationStatus":"verified"
+    },
+    {
+      "id": "moment",
+      "name": "Moment of a Force",
+      "expression": "M = Fd_{\\perp}",
+      "plainExpression": "moment = force × perpendicular distance",
+      "description": "Calculates the turning effect of a force about a selected point.",
+      "variables": [
+        {"symbol":"M","meaning":"moment","unit":"N·m"},
+        {"symbol":"F","meaning":"force","unit":"N"},
+        {"symbol":"d⊥","meaning":"perpendicular distance from the line of force to the point","unit":"m"}
+      ],
+      "chapterId":"a-1-c-2","sourcePages":[25],"tags":["moment","equilibrium","beam"],"verificationStatus":"verified"
+    },
+    {
+      "id": "moment-equilibrium",
+      "name": "Rotational Equilibrium",
+      "expression": "\\sum M_{CW} = \\sum M_{CCW}",
+      "plainExpression": "clockwise moments = counterclockwise moments",
+      "description": "For a body in rotational equilibrium, clockwise and counterclockwise moments about the same point balance.",
+      "variables": [],
+      "chapterId":"a-1-c-2","sourcePages":[28,32],"tags":["moment","equilibrium","beam"],"verificationStatus":"verified"
+    },
+    {
+      "id": "vertical-equilibrium",
+      "name": "Vertical Force Equilibrium",
+      "expression": "\\sum F_{up} = \\sum F_{down}",
+      "plainExpression": "upward forces = downward forces",
+      "description": "For a body in vertical equilibrium, total upward force equals total downward force.",
+      "variables": [],
+      "chapterId":"a-1-c-2","sourcePages":[28,32],"tags":["force","equilibrium","beam"],"verificationStatus":"verified"
+    },
+    {
+      "id": "mechanical-advantage",
+      "name": "Actual Mechanical Advantage",
+      "expression": "MA = \\frac{Load}{Effort}",
+      "plainExpression": "MA = load / effort",
+      "description": "Ratio of load to effort for a machine.",
+      "variables": [
+        {"symbol":"MA","meaning":"actual mechanical advantage","unit":"no units"},
+        {"symbol":"Load","meaning":"output load force","unit":"N"},
+        {"symbol":"Effort","meaning":"input effort force","unit":"N"}
+      ],
+      "chapterId":"a-1-c-3","sourcePages":[38],"tags":["simple machines","mechanical advantage"],"verificationStatus":"verified"
+    },
+    {
+      "id": "velocity-ratio",
+      "name": "Velocity Ratio",
+      "expression": "VR = \\frac{d_{effort}}{d_{load}}",
+      "plainExpression": "VR = distance moved by effort / distance moved by load",
+      "description": "Ratio of effort travel to load travel.",
+      "variables": [
+        {"symbol":"VR","meaning":"velocity ratio","unit":"no units"},
+        {"symbol":"d_effort","meaning":"distance moved by effort","unit":"same units as load distance"},
+        {"symbol":"d_load","meaning":"distance moved by load","unit":"same units as effort distance"}
+      ],
+      "chapterId":"a-1-c-3","sourcePages":[41],"tags":["simple machines","velocity ratio"],"verificationStatus":"verified"
+    },
+    {
+      "id": "machine-efficiency",
+      "name": "Machine Efficiency",
+      "expression": "\\eta = \\frac{MA}{VR}",
+      "plainExpression": "efficiency = MA / VR",
+      "description": "Relates actual mechanical advantage to velocity ratio. Multiply by 100 for percent efficiency.",
+      "variables": [
+        {"symbol":"η","meaning":"efficiency","unit":"decimal or %"},
+        {"symbol":"MA","meaning":"actual mechanical advantage","unit":"no units"},
+        {"symbol":"VR","meaning":"velocity ratio","unit":"no units"}
+      ],
+      "chapterId":"a-1-c-3","sourcePages":[42],"tags":["simple machines","efficiency"],"verificationStatus":"verified"
+    },
+    {
+      "id": "wheel-axle-vr",
+      "name": "Wheel and Axle Velocity Ratio",
+      "expression": "VR = \\frac{R}{r} = \\frac{D}{d}",
+      "plainExpression": "VR = wheel radius / axle radius = wheel diameter / axle diameter",
+      "description": "Velocity ratio for a simple wheel and axle.",
+      "variables": [
+        {"symbol":"R","meaning":"wheel radius","unit":"length"},
+        {"symbol":"r","meaning":"axle radius","unit":"length"},
+        {"symbol":"D","meaning":"wheel diameter","unit":"length"},
+        {"symbol":"d","meaning":"axle diameter","unit":"length"}
+      ],
+      "chapterId":"a-1-c-3","sourcePages":[49],"tags":["wheel and axle","velocity ratio"],"verificationStatus":"verified"
+    },
+    {
+      "id": "average-speed",
+      "name": "Average Speed",
+      "expression": "v_{avg} = \\frac{distance}{time}",
+      "plainExpression": "average speed = distance travelled / total time",
+      "description": "Average scalar speed over a journey.",
+      "variables": [],
+      "chapterId":"a-1-c-5","sourcePages":[71],"tags":["speed","motion"],"verificationStatus":"verified"
+    },
+    {
+      "id": "average-velocity",
+      "name": "Average Velocity",
+      "expression": "\\bar{v} = \\frac{displacement}{time}",
+      "plainExpression": "average velocity = displacement / time",
+      "description": "Average vector velocity from displacement over time.",
+      "variables": [],
+      "chapterId":"a-1-c-5","sourcePages":[71],"tags":["velocity","motion"],"verificationStatus":"verified"
+    },
+    {
+      "id": "uniform-motion-average",
+      "name": "Uniformly Changing Velocity Displacement",
+      "expression": "s = \\frac{u+v}{2}t",
+      "plainExpression": "s = ((u + v) / 2) × t",
+      "description": "Displacement using average velocity when acceleration is uniform.",
+      "variables": [
+        {"symbol":"s","meaning":"displacement","unit":"m"},
+        {"symbol":"u","meaning":"initial velocity","unit":"m/s"},
+        {"symbol":"v","meaning":"final velocity","unit":"m/s"},
+        {"symbol":"t","meaning":"time","unit":"s"}
+      ],
+      "chapterId":"a-1-c-5","sourcePages":[76],"tags":["kinematics","uniform acceleration"],"verificationStatus":"verified"
+    },
+    {
+      "id": "kinematic-v",
+      "name": "Uniform Acceleration Velocity",
+      "expression": "v = u + at",
+      "plainExpression": "final velocity = initial velocity + acceleration × time",
+      "description": "Relates initial velocity, final velocity, acceleration, and time for constant acceleration.",
+      "variables": [],
+      "chapterId":"a-1-c-5","sourcePages":[79],"tags":["kinematics","uniform acceleration"],"verificationStatus":"verified"
+    },
+    {
+      "id": "kinematic-v2",
+      "name": "Uniform Acceleration Without Time",
+      "expression": "v^2 = u^2 + 2as",
+      "plainExpression": "final velocity² = initial velocity² + 2 × acceleration × displacement",
+      "description": "Uniform acceleration relation useful when time is not given.",
+      "variables": [],
+      "chapterId":"a-1-c-5","sourcePages":[81],"tags":["kinematics","uniform acceleration"],"verificationStatus":"verified"
+    },
+    {
+      "id": "kinematic-distance",
+      "name": "Uniform Acceleration Displacement",
+      "expression": "s = ut + \\frac{1}{2}at^2",
+      "plainExpression": "s = initial velocity × time + 0.5 × acceleration × time²",
+      "description": "Displacement under constant acceleration when initial velocity, acceleration, and time are known.",
+      "variables": [],
+      "chapterId":"a-1-c-5","sourcePages":[82],"tags":["kinematics","uniform acceleration"],"verificationStatus":"verified"
+    },
+    {
+      "id": "absolute-pressure",
+      "name": "Absolute Pressure",
+      "expression": "P_{abs} = P_{gauge} + P_{atm}",
+      "plainExpression": "absolute pressure = gauge pressure + atmospheric pressure",
+      "description": "Converts gauge pressure to absolute pressure using atmospheric pressure.",
+      "variables": [],
+      "chapterId":"a-1-c-6","sourcePages":[96],"tags":["pressure","absolute pressure"],"verificationStatus":"verified"
+    },
+    {
+      "id": "friction-coefficient",
+      "name": "Coefficient of Friction",
+      "expression": "\\mu = \\frac{F_F}{R_N}",
+      "plainExpression": "coefficient of friction = friction force / normal reaction force",
+      "description": "Ratio of friction force to normal reaction force.",
+      "variables": [
+        {"symbol":"μ","meaning":"coefficient of friction","unit":"no units"},
+        {"symbol":"F_F","meaning":"friction force","unit":"N"},
+        {"symbol":"R_N","meaning":"normal reaction force","unit":"N"}
+      ],
+      "chapterId":"a-1-c-7","sourcePages":[110],"tags":["friction"],"verificationStatus":"verified"
+    },
+    {
+      "id": "stress",
+      "name": "Normal Stress",
+      "expression": "\\sigma = \\frac{P}{A}",
+      "plainExpression": "normal stress = load / cross-sectional area",
+      "description": "Normal stress intensity from a perpendicular load over cross-sectional area.",
+      "variables": [],
+      "chapterId":"a-1-c-8","sourcePages":[121],"tags":["stress","materials"],"verificationStatus":"verified"
+    },
+    {
+      "id": "shear-stress",
+      "name": "Shear Stress",
+      "expression": "\\tau = \\frac{P}{A}",
+      "plainExpression": "shear stress = parallel load / shear area",
+      "description": "Parallel shear stress intensity from a load over the resisting shear area.",
+      "variables": [],
+      "chapterId":"a-1-c-8","sourcePages":[121],"tags":["stress","shear"],"verificationStatus":"verified"
+    },
+    {
+      "id": "strain",
+      "name": "Strain",
+      "expression": "\\varepsilon = \\frac{\\Delta l}{l}",
+      "plainExpression": "strain = change in length / original length",
+      "description": "Measures deformation as change in length divided by original length.",
+      "variables": [],
+      "chapterId":"a-1-c-8","sourcePages":[128],"tags":["strain","materials"],"verificationStatus":"verified"
+    },
+    {
+      "id": "factor-safety",
+      "name": "Factor of Safety",
+      "expression": "FoS = \\frac{ultimate\\ stress}{allowable\\ stress}",
+      "plainExpression": "factor of safety = ultimate stress / allowable stress",
+      "description": "Ratio of ultimate stress to allowable stress.",
+      "variables": [],
+      "chapterId":"a-1-c-8","sourcePages":[127],"tags":["stress","safety factor"],"verificationStatus":"verified"
+    },
+    {
+      "id": "belt-power",
+      "name": "Power Transmitted by a Belt",
+      "expression": "P = (F_1-F_2)v",
+      "plainExpression": "power transmitted = (tight-side tension - slack-side tension) × belt speed",
+      "description": "Power transmitted by a belt from the difference in belt tensions and belt speed.",
+      "variables": [],
+      "chapterId":"a-1-c-9","sourcePages":[138],"tags":["power transmission","belts"],"verificationStatus":"verified"
+    },
+    {
+      "id": "pulley-speed-ratio",
+      "name": "Pulley Speed and Diameter Relationship",
+      "expression": "N_1D_1 = N_2D_2",
+      "plainExpression": "driver speed × driver diameter = driven speed × driven diameter",
+      "description": "Ideal belt-drive speed relationship when belt slip is neglected.",
+      "variables": [],
+      "chapterId":"a-1-c-9","sourcePages":[134,140],"tags":["power transmission","pulley"],"verificationStatus":"verified"
+    },
+    {
+      "id": "gear-speed",
+      "name": "Gear Speed Ratio",
+      "expression": "N_{driven} = N_{driver}\\frac{T_{driver}}{T_{driven}}",
+      "plainExpression": "driven speed = driver speed × driver teeth / driven teeth",
+      "description": "Relates rotational speeds of meshing gears to their tooth counts.",
+      "variables": [],
+      "chapterId":"a-1-c-9","sourcePages":[141],"tags":["power transmission","gears"],"verificationStatus":"verified"
+    }
+  ],
+  "flashcards": [
+    {"id":"fc-moment","front":"What is a moment of force?","back":"The turning effect of a force about a point. Its magnitude is force multiplied by the perpendicular distance from the line of force to the point.","chapterId":"a-1-c-2","sourcePages":[25],"tags":["moments"]},
+    {"id":"fc-equilibrium","front":"What three balance conditions define equilibrium in Chapter 2?","back":"Upward forces equal downward forces, rightward forces equal leftward forces, and clockwise moments equal counterclockwise moments.","chapterId":"a-1-c-2","sourcePages":[28],"tags":["equilibrium"]},
+    {"id":"fc-fulcrum","front":"What is a fulcrum?","back":"A single support about which a bar is free to rotate.","chapterId":"a-1-c-2","sourcePages":[28],"tags":["moments"]},
+    {"id":"fc-pressure","front":"What is pressure?","back":"Force per unit area, acting normal to a surface.","chapterId":"a-1-c-6","sourcePages":[95],"tags":["pressure"]},
+    {"id":"fc-work","front":"When is work done?","back":"When a force applied to a body causes it to move through a distance.","chapterId":"a-1-c-6","sourcePages":[90],"tags":["work"]},
+    {"id":"fc-power","front":"What is power?","back":"The rate of doing work, or work done per unit time.","chapterId":"a-1-c-6","sourcePages":[97],"tags":["power"]},
+    {"id":"fc-static-friction","front":"What is static friction?","back":"Resistance that opposes the initial movement of a body at rest.","chapterId":"a-1-c-7","sourcePages":[108],"tags":["friction"]},
+    {"id":"fc-kinetic-friction","front":"What is kinetic friction?","back":"Resistance that opposes the continued sliding movement of an object.","chapterId":"a-1-c-7","sourcePages":[108],"tags":["friction"]},
+    {"id":"fc-elasticity","front":"Define elasticity.","back":"The ability of a material to return to its original shape after a deforming force is removed.","chapterId":"a-1-c-8","sourcePages":[120],"tags":["materials"]},
+    {"id":"fc-plasticity","front":"Define plasticity.","back":"The ability of a material to retain its deformed shape when a deforming force is removed.","chapterId":"a-1-c-8","sourcePages":[120],"tags":["materials"]},
+    {"id":"fc-ductility","front":"Define ductility.","back":"The ability of a material to be stretched and reduced in cross section without breaking.","chapterId":"a-1-c-8","sourcePages":[120],"tags":["materials"]}
+  ],
+  "lessonEnhancements": {
+    "a-1-c-2": {
+      "overview":"This chapter teaches why balancing only the upward and downward forces is not enough. A beam can have zero net vertical force and still have a turning tendency. Moments account for that turning effect.",
+      "keyConcepts":[
+        "A force creates a moment only when its line of action has a perpendicular distance from the chosen point.",
+        "Moment magnitude is force multiplied by perpendicular distance.",
+        "Equilibrium requires both force balance and moment balance.",
+        "You may take moments about any point, but choosing a support with an unknown reaction usually eliminates that unknown from the moment equation.",
+        "Reaction forces at supports are the upward forces that balance the applied loads on a simply supported beam."
+      ],
+      "remember":[
+        "Use perpendicular distance, not slant distance.",
+        "State the point about which moments are taken.",
+        "For equilibrium: clockwise moments equal counterclockwise moments.",
+        "After finding one support reaction, use upward forces equal downward forces to find the other."
+      ],
+      "commonMistakes":[
+        "Stopping after proving upward force equals downward force. That checks translation, but not rotation.",
+        "Using the total beam length as the lever arm for every force instead of each force's distance from the chosen pivot.",
+        "Using the slanted distance instead of the perpendicular distance from the force's line of action.",
+        "Mixing clockwise and counterclockwise moments without identifying their direction first."
+      ],
+      "quickCheck":[
+        {"prompt":"A 10 N downward force acts 2 m to the right of a pivot. What moment does it create?","answer":"20 N·m clockwise."},
+        {"prompt":"If upward forces equal downward forces, is a beam automatically in equilibrium?","answer":"No. Clockwise and counterclockwise moments must also balance."},
+        {"prompt":"Why is taking moments about one support useful when solving a simply supported beam?","answer":"The reaction at that support has zero perpendicular distance from the pivot, so its moment is zero and it drops out of the equation."}
+      ]
+    }
+  }
+}

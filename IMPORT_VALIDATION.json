@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "textbookPages": 1858,
+  "units": 12,
+  "chapters": 56,
+  "sections": 294,
+  "textbookSelfTests": 53,
+  "formulaRecords": 908,
+  "errors": [],
+  "warningsCount": 1,
+  "warnings": [
+    "Self test a-10-c-1-self-1-p1368 has no same-page answer extraction"
+  ]
+}

@@ -1,0 +1,394 @@
+[
+  {
+    "unit": 1,
+    "chapter": 1,
+    "title": "Introduction to Basic Mechanics",
+    "startPdfPage": 9,
+    "endPdfPage": 20
+  },
+  {
+    "unit": 1,
+    "chapter": 2,
+    "title": "Forces and Moments",
+    "startPdfPage": 21,
+    "endPdfPage": 34
+  },
+  {
+    "unit": 1,
+    "chapter": 3,
+    "title": "Simple Machines",
+    "startPdfPage": 35,
+    "endPdfPage": 54
+  },
+  {
+    "unit": 1,
+    "chapter": 4,
+    "title": "Scalars and Vectors",
+    "startPdfPage": 55,
+    "endPdfPage": 66
+  },
+  {
+    "unit": 1,
+    "chapter": 5,
+    "title": "Linear Velocity and Acceleration",
+    "startPdfPage": 67,
+    "endPdfPage": 86
+  },
+  {
+    "unit": 1,
+    "chapter": 6,
+    "title": "Force, Work, Pressure, Power, and Energy",
+    "startPdfPage": 87,
+    "endPdfPage": 104
+  },
+  {
+    "unit": 1,
+    "chapter": 7,
+    "title": "Friction",
+    "startPdfPage": 105,
+    "endPdfPage": 116
+  },
+  {
+    "unit": 1,
+    "chapter": 8,
+    "title": "Stress and Strain",
+    "startPdfPage": 117,
+    "endPdfPage": 130
+  },
+  {
+    "unit": 1,
+    "chapter": 9,
+    "title": "Power Transmission",
+    "startPdfPage": 131,
+    "endPdfPage": 180
+  },
+  {
+    "unit": 2,
+    "chapter": 1,
+    "title": "Introduction to Matter and Chemistry",
+    "startPdfPage": 185,
+    "endPdfPage": 212
+  },
+  {
+    "unit": 2,
+    "chapter": 2,
+    "title": "Introduction to Thermodynamics",
+    "startPdfPage": 213,
+    "endPdfPage": 234
+  },
+  {
+    "unit": 2,
+    "chapter": 3,
+    "title": "Introduction to Heat Transfer and Heat Exchangers",
+    "startPdfPage": 235,
+    "endPdfPage": 264
+  },
+  {
+    "unit": 2,
+    "chapter": 4,
+    "title": "Thermodynamics of Steam",
+    "startPdfPage": 265,
+    "endPdfPage": 324
+  },
+  {
+    "unit": 3,
+    "chapter": 1,
+    "title": "Introduction to Power Engineering",
+    "startPdfPage": 329,
+    "endPdfPage": 350
+  },
+  {
+    "unit": 3,
+    "chapter": 2,
+    "title": "Jurisdictional Legislation for Power Engineers",
+    "startPdfPage": 351,
+    "endPdfPage": 370
+  },
+  {
+    "unit": 3,
+    "chapter": 3,
+    "title": "Codes and Standards for Power Engineers and Pressure Vessels",
+    "startPdfPage": 371,
+    "endPdfPage": 428
+  },
+  {
+    "unit": 4,
+    "chapter": 1,
+    "title": "4th Class Edition 3.5 • Part A Introduction to Plant Safety",
+    "startPdfPage": 433,
+    "endPdfPage": 464
+  },
+  {
+    "unit": 4,
+    "chapter": 2,
+    "title": "Plant Safety Programs",
+    "startPdfPage": 465,
+    "endPdfPage": 488
+  },
+  {
+    "unit": 4,
+    "chapter": 3,
+    "title": "Handling of Dangerous Materials",
+    "startPdfPage": 489,
+    "endPdfPage": 502
+  },
+  {
+    "unit": 4,
+    "chapter": 4,
+    "title": "Plant Fire Safety",
+    "startPdfPage": 503,
+    "endPdfPage": 528
+  },
+  {
+    "unit": 4,
+    "chapter": 5,
+    "title": "Fire Extinguishing Methods and Equipment",
+    "startPdfPage": 529,
+    "endPdfPage": 588
+  },
+  {
+    "unit": 5,
+    "chapter": 1,
+    "title": "Introduction to the Environment",
+    "startPdfPage": 593,
+    "endPdfPage": 620
+  },
+  {
+    "unit": 5,
+    "chapter": 2,
+    "title": "Gas and Noise Emissions",
+    "startPdfPage": 621,
+    "endPdfPage": 652
+  },
+  {
+    "unit": 5,
+    "chapter": 3,
+    "title": "Liquid and Solid Emissions",
+    "startPdfPage": 653,
+    "endPdfPage": 694
+  },
+  {
+    "unit": 6,
+    "chapter": 1,
+    "title": "Energy Plant Construction and Operation Materials",
+    "startPdfPage": 699,
+    "endPdfPage": 714
+  },
+  {
+    "unit": 6,
+    "chapter": 2,
+    "title": "Introduction to Welding",
+    "startPdfPage": 715,
+    "endPdfPage": 754
+  },
+  {
+    "unit": 6,
+    "chapter": 3,
+    "title": "Boiler and Pressure Vessel Weld Inspection",
+    "startPdfPage": 755,
+    "endPdfPage": 806
+  },
+  {
+    "unit": 7,
+    "chapter": 1,
+    "title": "Introduction to Energy Plant Piping Systems",
+    "startPdfPage": 811,
+    "endPdfPage": 844
+  },
+  {
+    "unit": 7,
+    "chapter": 2,
+    "title": "Introduction to Energy Plant Valves",
+    "startPdfPage": 845,
+    "endPdfPage": 894
+  },
+  {
+    "unit": 8,
+    "chapter": 1,
+    "title": "Basic Electricity",
+    "startPdfPage": 899,
+    "endPdfPage": 934
+  },
+  {
+    "unit": 8,
+    "chapter": 2,
+    "title": "Magnetism and Electromagnetism",
+    "startPdfPage": 935,
+    "endPdfPage": 954
+  },
+  {
+    "unit": 8,
+    "chapter": 3,
+    "title": "Electrical Metering Devices",
+    "startPdfPage": 955,
+    "endPdfPage": 972
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "title": "Motors and Generators",
+    "startPdfPage": 973,
+    "endPdfPage": 1018
+  },
+  {
+    "unit": 8,
+    "chapter": 5,
+    "title": "Transformers",
+    "startPdfPage": 1019,
+    "endPdfPage": 1040
+  },
+  {
+    "unit": 8,
+    "chapter": 6,
+    "title": "Electrical Distribution Circuits",
+    "startPdfPage": 1041,
+    "endPdfPage": 1126
+  },
+  {
+    "unit": 9,
+    "chapter": 1,
+    "title": "Introduction to Energy Plant Controls and Instrumentation",
+    "startPdfPage": 1131,
+    "endPdfPage": 1152
+  },
+  {
+    "unit": 9,
+    "chapter": 2,
+    "title": "Introduction to Process Measurement",
+    "startPdfPage": 1153,
+    "endPdfPage": 1198
+  },
+  {
+    "unit": 9,
+    "chapter": 3,
+    "title": "Basic Control and Instrumentation Components",
+    "startPdfPage": 1199,
+    "endPdfPage": 1232
+  },
+  {
+    "unit": 9,
+    "chapter": 4,
+    "title": "Introduction to Programmable Controllers",
+    "startPdfPage": 1233,
+    "endPdfPage": 1248
+  },
+  {
+    "unit": 9,
+    "chapter": 5,
+    "title": "Electronic Control Systems and Computer Applications",
+    "startPdfPage": 1249,
+    "endPdfPage": 1270
+  },
+  {
+    "unit": 9,
+    "chapter": 6,
+    "title": "Electrical Control Systems",
+    "startPdfPage": 1271,
+    "endPdfPage": 1342
+  },
+  {
+    "unit": 10,
+    "chapter": 1,
+    "title": "Energy Plant Sketching",
+    "startPdfPage": 1347,
+    "endPdfPage": 1370
+  },
+  {
+    "unit": 10,
+    "chapter": 2,
+    "title": "Plant Diagrams and Drawings",
+    "startPdfPage": 1371,
+    "endPdfPage": 1390
+  },
+  {
+    "unit": 10,
+    "chapter": 3,
+    "title": "Plant Communications",
+    "startPdfPage": 1391,
+    "endPdfPage": 1438
+  },
+  {
+    "unit": 11,
+    "chapter": 1,
+    "title": "Introduction to Boilers",
+    "startPdfPage": 1443,
+    "endPdfPage": 1470
+  },
+  {
+    "unit": 11,
+    "chapter": 2,
+    "title": "Firetube Boilers",
+    "startPdfPage": 1471,
+    "endPdfPage": 1496
+  },
+  {
+    "unit": 11,
+    "chapter": 3,
+    "title": "Watertube Boilers",
+    "startPdfPage": 1497,
+    "endPdfPage": 1524
+  },
+  {
+    "unit": 11,
+    "chapter": 4,
+    "title": "Electric Boilers",
+    "startPdfPage": 1525,
+    "endPdfPage": 1534
+  },
+  {
+    "unit": 11,
+    "chapter": 5,
+    "title": "Special Boiler Designs for Heating Plants",
+    "startPdfPage": 1535,
+    "endPdfPage": 1556
+  },
+  {
+    "unit": 11,
+    "chapter": 6,
+    "title": "Differences between Power and Heating Boilers",
+    "startPdfPage": 1557,
+    "endPdfPage": 1606
+  },
+  {
+    "unit": 12,
+    "chapter": 1,
+    "title": "Combustion",
+    "startPdfPage": 1611,
+    "endPdfPage": 1632
+  },
+  {
+    "unit": 12,
+    "chapter": 2,
+    "title": "Fuel Delivery and Firing Systems",
+    "startPdfPage": 1633,
+    "endPdfPage": 1700
+  },
+  {
+    "unit": 12,
+    "chapter": 3,
+    "title": "Draft",
+    "startPdfPage": 1701,
+    "endPdfPage": 1728
+  },
+  {
+    "unit": 12,
+    "chapter": 4,
+    "title": "Feedwater Systems",
+    "startPdfPage": 1729,
+    "endPdfPage": 1772
+  },
+  {
+    "unit": 12,
+    "chapter": 5,
+    "title": "Blowoff and Blowdown Systems",
+    "startPdfPage": 1773,
+    "endPdfPage": 1798
+  },
+  {
+    "unit": 12,
+    "chapter": 6,
+    "title": "Boiler Fireside Cleaning Systems",
+    "startPdfPage": 1799,
+    "endPdfPage": 1858
+  }
+]

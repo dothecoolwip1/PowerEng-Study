@@ -1,0 +1,14 @@
+import { useEffect, useState } from 'react';
+import { Check, X } from 'lucide-react';
+import { db } from '../db/db';
+import { getManifest, getUnit } from '../services/content';
+import type { TextbookQuestion } from '../types/models';
+import { SourceRef } from '../components/SourceRef';
+
+interface Item extends TextbookQuestion { chapterId:string; chapterTitle:string; unit:number; }
+export function SelfTestsPage(){
+  const [items,setItems]=useState<Item[]>([]); const [unit,setUnit]=useState(1); const [revealed,setRevealed]=useState<Record<string,boolean>>({});
+  useEffect(()=>{getUnit(unit).then(u=>setItems(u.chapters.flatMap(c=>c.selfTests.map(q=>({...q,chapterId:c.id,chapterTitle:c.title,unit})))));},[unit]);
+  const mark=async(item:Item,correct:boolean)=>{const answer=item.textbookAnswer ?? 'Official answer was not parsed from this page.'; await db.attempts.put({id:crypto.randomUUID(),questionId:item.id,chapterId:item.chapterId,correct,studentAnswer:correct?'self marked correct':'self marked incorrect',createdAt:new Date().toISOString()}); if(!correct){const old=await db.mistakes.get(item.id);await db.mistakes.put({id:item.id,questionId:item.id,chapterId:item.chapterId,question:item.prompt,studentAnswer:'Self marked incorrect',correctAnswer:answer,timesMissed:(old?.timesMissed??0)+1,lastMissedDate:new Date().toISOString(),resolved:false});}else{const old=await db.mistakes.get(item.id);if(old)await db.mistakes.update(item.id,{lastCorrectDate:new Date().toISOString(),resolved:true});}};
+  return <div className="stack"><div className="page-title"><p className="eyebrow">Practice</p><h1>Textbook self tests</h1><p>Questions are extracted from the textbook. Official answer text is stored separately and never replaced with a generated answer.</p></div><div className="chip-row">{Array.from({length:12},(_,i)=>i+1).map(n=><button className={unit===n?'chip active':'chip'} onClick={()=>setUnit(n)} key={n}>A-{n}</button>)}</div>{items.length===0&&<div className="loading-card">No self tests were automatically detected in this unit.</div>}<div className="question-list">{items.map(item=><article className="question-card" key={item.id}><p className="eyebrow">Unit A-{item.unit} • {item.chapterTitle} • Self-Test {item.questionNumber}</p><h2>{item.prompt || 'Question text requires manual review.'}</h2><SourceRef pages={item.sourcePages}/><button className="secondary-button" onClick={()=>setRevealed(r=>({...r,[item.id]:!r[item.id]}))}>{revealed[item.id]?'Hide official answer':'Reveal official answer'}</button>{revealed[item.id]&&<div className="answer-box"><strong>Textbook answer</strong><p>{item.textbookAnswer ?? 'The automatic parser did not find the official answer on the same source page. Open the source page to verify it.'}</p><div className="mark-row"><button onClick={()=>mark(item,true)}><Check/> I got it</button><button onClick={()=>mark(item,false)}><X/> I missed it</button></div></div>}</article>)}</div></div>;
+}

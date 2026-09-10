@@ -1,0 +1,13 @@
+{
+  "name":"Power Engineering Study",
+  "short_name":"Power Study",
+  "description":"Offline first Fourth Class Power Engineering study platform",
+  "start_url":"/PowerEng-Study/",
+  "display":"standalone",
+  "background_color":"#07141b",
+  "theme_color":"#0b5d75",
+  "icons":[
+    {"src":"/PowerEng-Study/icons/icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"/PowerEng-Study/icons/icon-512.png","sizes":"512x512","type":"image/png"}
+  ]
+}
