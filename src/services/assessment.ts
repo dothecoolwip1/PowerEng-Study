@@ -64,8 +64,8 @@ const canonicalUnit = (value: string): string | null => {
   const compact = normalized(value).replace(/\s+/g, '');
   const unitMatchers: Array<[RegExp,string]> = [
     [/kn\*?m|knm/, 'knm'], [/n\*?m|nm/, 'nm'], [/m\/s2/, 'm/s2'], [/m\/s/, 'm/s'],
-    [/mpa/, 'mpa'], [/kpa/, 'kpa'], [/pa/, 'pa'], [/mw/, 'mw'], [/kw/, 'kw'], [/w/, 'w'],
-    [/mj/, 'mj'], [/kj/, 'kj'], [/j/, 'j'], [/kg/, 'kg'], [/m2/, 'm2'], [/°c|degc/, 'c'], [/k$/, 'k'], [/%/, '%']
+    [/mpa/, 'mpa'], [/kpa/, 'kpa'], [/pa/, 'pa'], [/mw/, 'mw'], [/kw/, 'kw'], [/(?:^|\d)w$/, 'w'],
+    [/mj/, 'mj'], [/kj/, 'kj'], [/(?:^|\d)j$/, 'j'], [/kg/, 'kg'], [/m2/, 'm2'], [/°c|degc/, 'c'], [/k$/, 'k'], [/%/, '%']
   ];
   for (const [pattern, unit] of unitMatchers) if (pattern.test(compact)) return unit;
   return null;
@@ -200,8 +200,13 @@ export function gradeAssessment(parts: AssessmentPart[], answers: Record<string,
     partId: part.id,
     ...gradeAnswer(answers[part.id] ?? '', part.expectedAnswer, part.choices),
   }));
-  const graded = grades.filter((grade) => grade.correct !== null);
-  const correct = graded.length === 0 ? null : grades.some((grade) => grade.correct === false) ? false : grades.every((grade) => grade.correct === true || grade.correct === null) ? true : null;
+  const correct = grades.some((grade) => grade.correct === false)
+    ? false
+    : grades.some((grade) => grade.correct === null)
+      ? null
+      : grades.length > 0
+        ? true
+        : null;
   return {
     parts: grades,
     correct,
